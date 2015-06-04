@@ -4,15 +4,14 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("post-article content"); ?>>		
-	<div class="post-category"><?php the_category(' '); ?></div>
+<article id="post-<?php the_ID(); ?>" <?php post_class("post-article content"); ?>>	
 	<?php if ( has_post_thumbnail() ) {
-		the_post_thumbnail();
+//		the_post_thumbnail();
 	}?>
-
 	<header class="entry-header">
-	<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
- 	<?php saccharine_posted_on(); ?>
+ 		<?php saccharine_posted_on(); ?>
+		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+		<div class="post-category"><?php the_category(' '); ?></div>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php

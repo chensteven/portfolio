@@ -29,6 +29,7 @@
 			</nav>
 		</header>
 		<main id="main" class="main-container-posts" role="main">
+			<h1 class="page-title">All Posts</h1>
 			<section class="post-list">
 				<?php if ( have_posts() ) : ?>
 		
@@ -54,5 +55,22 @@
 				<?php endif; ?>
 			</section>
 		</main><!-- #main -->
+		<aside class="right-sidebar">
+			<div class="rightbar">
+				<div class="secondary-nav">
+<!-- 					<p>This is where I keep my thoughts. I truely believe these are the issues that we should all care about.</p>-->
+					<h4>Categories</h4> 
+					<ul class="categories-list">
+						<li><a href="">All - Default</a></li>
+						<li><a href="">Book Reviews</a></li>
+						<li><a href="">Health</a></li>
+						<li><a href="">Fashion</a></li>
+						<li><a href="">Exercise</a></li>
+						<li><a href="">Design</a></li>
+						<li><a href="">Programming</a></li>
+					</ul>
+				</div>
+			</div>
+		</aside>
 	</div><!-- #primary -->
 
